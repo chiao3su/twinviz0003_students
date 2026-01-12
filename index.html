@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>新北市國小學生人數預估</title>
+  <title>新北市國小學生人數預估賽馬圖</title>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -198,9 +198,12 @@
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-2 sm:p-3 md:p-4">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-0.5 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-              新北市國小學生人數預估
+              新北市國小學生人數預估賽馬圖
             </h1>
             <p className="text-center text-slate-400 mb-2 text-xs">
+              資料來源：<a href="https://g0v.hackmd.io/TG6CtrxyRdudWawzTXfPiw?view" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">總統盃黑客松計畫</a>
+              <span className="hidden sm:inline"> ｜ </span>
+              <br className="sm:hidden" />
               共 29 區、{totalSchoolsNow} 所學校
               {totalSchoolsNow !== totalSchools113 && (
                 <span className="text-red-300 ml-1">
@@ -333,9 +336,8 @@
             </div>
             
             <div className="mt-2 text-center text-slate-500 text-xs">
-              資料期間：113~130學年度（推估）<br className="sm:hidden" />
-              <span className="hidden sm:inline"> | </span>
-              資料來源：<a href="https://g0v.hackmd.io/TG6CtrxyRdudWawzTXfPiw?view" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">總統盃黑客松計畫</a>
+              資料期間：113~130學年度（推估） | 
+              <a href="https://g0v.hackmd.io/TG6CtrxyRdudWawzTXfPiw?view" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-300 underline ml-1">總統盃黑客松計畫</a>
             </div>
           </div>
         </div>
