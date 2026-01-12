@@ -201,7 +201,6 @@
               新北市國小學生人數預估
             </h1>
             <p className="text-center text-slate-400 mb-2 text-xs">
-              <br className="sm:hidden" />
               共 29 區、{totalSchoolsNow} 所學校
               {totalSchoolsNow !== totalSchools113 && (
                 <span className="text-red-300 ml-1">
@@ -334,8 +333,9 @@
             </div>
             
             <div className="mt-2 text-center text-slate-500 text-xs">
-              資料期間：113~130學年度（推估） | 
-              <a href="https://g0v.hackmd.io/TG6CtrxyRdudWawzTXfPiw?view" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-300 underline ml-1">總統盃黑客松計畫</a>
+              資料期間：113~130學年度（推估）<br className="sm:hidden" />
+              <span className="hidden sm:inline"> | </span>
+              資料來源：<a href="https://g0v.hackmd.io/TG6CtrxyRdudWawzTXfPiw?view" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">總統盃黑客松計畫</a>
             </div>
           </div>
         </div>
